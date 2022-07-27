@@ -1,0 +1,89 @@
+<!doctype html>
+<html class="no-js" lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="ビジュアルで見るパスポートのチカラ">
+		<meta property="og:url" content="https://kaz-ogiwara.github.io/passport-power/" />
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content="Visualization of World Passport Power" />
+		<meta property="og:description" content="ビジュアルで見るパスポートのチカラ" />
+		<meta property="og:image" content="https://kaz-ogiwara.github.io/passport-power/img/image_1200_630.png" />
+		<meta name="twitter:card" content="summary_large_image" />
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Visualization of World Passport Power</title>
+  </head>
+  <body>
+    <div id="cover" class="show">
+      <p>Loading...</p>
+    </div>
+    <div id="globe"></div>
+    <div id="title-box">
+      <h1>Visualization of World Passport Power</h1>
+      <h2>ビジュアルで見るパスポートのチカラ</h2>
+    </div>
+    <div id="info-box">
+      <div class="title"></div>
+      <table>
+        <tr>
+          <th>Visa-free:</th>
+          <td id=""></td>
+        </tr>
+        <tr>
+          <th>Visa on arrival:</th>
+          <td></td>
+        </tr>
+        <tr>
+          <th>Visa required:</th>
+          <td></td>
+        </tr>
+      </table>
+      <div id="info-value"></div>
+    </div>
+    <div id="buttons">
+      <a class="social-button facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2ftoyokeizai%2enet%2fsp%2fbrandstudio%2dlab%2fpassport%2f%0d%0a" target="_blank"></a>
+      <a class="social-button twitter" href="https://twitter.com/intent/tweet?text=Visualization%20of%20World%20Passport%20Power%20%2d%20%e3%83%93%e3%82%b8%e3%83%a5%e3%82%a2%e3%83%ab%e3%81%a7%e8%a6%8b%e3%82%8b%e3%83%91%e3%82%b9%e3%83%9d%e3%83%bc%e3%83%88%e3%81%ae%e3%83%81%e3%82%ab%e3%83%a9&url=https%3a%2f%2ftoyokeizai%2enet%2fsp%2fbrandstudio%2dlab%2fpassport%2f" target="_blank"></a>
+      <div id="help-button"></div>
+    </div>
+    <div id="article">
+      <div class="cover"></div>
+      <div class="modal">
+        <button class="close"></button>
+        <div class="text-block">
+          <div class="inner">
+            <section>
+              <h3>What is this?</h3>
+              <h4>これは何ですか？</h4>
+              <p class="en">This is a data visualization that shows where you can travel without visa from a country. The more red lines, the more countries citizens from the selected country can visit without a visa.</p>
+              <p>ある国からビザ不要で渡航できる国を表したデータビジュアルです。赤い線が多いほど、選択された国からビザなしで渡航できる国が多いことを示します。</p>
+            </section>
+            <section>
+              <h3>What do red and blue lines mean?</h3>
+              <h4>赤と青の線は何を意味しますか？</h4>
+              <p class="en">The red line means that citizens from the selected country can travel to another without a visa (Visa-free or visa on arrival). The blue line means that visa is required for traveling from the selected country to another, while visa is not required in the opposite direction. If in both directions a visa is not necessary, the line becomes red.</p>
+              <p>選択されている国からビザなしで渡航できる国が赤い線でつながれています（ビザ不要、到着時ビザ発行を含む）。青い線の場合、選択されている国から別の国への渡航はビザが必要ですが、逆はビザ不要であることを意味します。なお、両方に当てはまる場合には線は赤くなります。</p>
+            </section>
+            <section>
+              <h3>What is the data source?</h3>
+              <h4>データはどこから取得しましたか？</h4>
+              <p class="en">The data was retrieved from <a href="https://www.passportindex.org/byRank.php" target="_blank">Global Passport Power Rank 2019</a>.</p>
+              <p>データは<a href="https://www.passportindex.org/byRank.php" target="_blank">Global Passport Power Rank 2019</a>（英語）から取得しました。</p>
+            </section>
+            <section>
+              <p class="notes en">Gio.js country list does not contain Hong Kong, Macau, Kosovo, and South Sudan. Select event on Taiwan seems to be treated as China.</p>
+              <p class="notes">香港、マカオ、コソボ、南スーダンはGio.jsの国リストに入っていない。また台湾はGio.jsのクリックイベントが中国本土と一緒に扱われている。</p>
+            </section>
+            <section>
+              <p>Created by: <a href="https://kaz-ogiwara.github.io/" target="_blank">Kazuki OGIWARA</a></p>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r83/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/giojs@2.2.2/build/gio.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/script.min.js"></script>
+  </body>
+</html>
